@@ -34,8 +34,8 @@ for jj in range(Nseed_BA):                             # full seed, i.e., all co
     degree[jj] = len(G[jj])
 
 mlink = k/2                                            # number of link to be added to each new node
-pos = Nseed                                            # index of new node
-sumdeg = np.sum(degree[:Nseed])
+pos = Nseed_BA                                         # index of new node
+sumdeg = np.sum(degree[:Nseed_BA])
 while pos < N:                                         # add a new node to the network
     linkage = 0
     while linkage < mlink:                             # until "mlink" number of link is added
